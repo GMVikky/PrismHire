@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-slate-300 bg-slate-950 transition-all duration-500;
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  .animate-shake {
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+  }
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  @apply bg-slate-900/60 backdrop-blur-lg border border-slate-800 shadow-xl;
+}
+
+.glass-dark {
+  @apply bg-slate-900/80 backdrop-blur-md border border-slate-700/50 shadow-xl;
+}
+
+@layer utilities {
+    /* Custom scrollbar */
+    .scrollbar-thin::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+        background: rgb(55 65 81);
+        border-radius: 3px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        background: rgb(75 85 99);
+    }
+
+    /* Custom Scrollbar Utility */
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: rgba(15, 23, 42, 0.5); 
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(99, 102, 241, 0.5); /* Brand Indigo */
+        border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(99, 102, 241, 0.8);
+    }
+}

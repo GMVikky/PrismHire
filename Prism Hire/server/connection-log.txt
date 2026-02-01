@@ -1,0 +1,10 @@
+[dotenv@17.2.3] injecting env (4) from .env [2m-- tip: ⚙️  override existing env vars with { override: true }[0m
+----------------------------------------
+🔍 DIAGNOSTIC: Checking Gemini Connection
+----------------------------------------
+🔑 API Key found: AIzaSyD4...Cq0E
+Attempting to connect to Gemini (model: gemini-1.5-flash)...
+❌ FAILURE: Connection failed.
+----------------------------------------
+RAW ERROR:
+----------------------------------------

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Branding */
+    --pk-navy: #0f172a;
+    /* Slate 900 */
+    --pk-charcoal: #1e293b;
+    /* Slate 800 */
+    --pk-surface: #334155;
+    /* Slate 700 */
+    --pk-primary: #6366f1;
+    /* Indigo 500 */
+    --pk-accent: #ec4899;
+    /* Pink 500 */
+    --pk-red: #ef4444;
+    /* Red 500 */
+    --pk-green: #10b981;
+    /* Emerald 500 */
+
+    /* Text */
+    --text-primary: #f8fafc;
+    /* Slate 50 */
+    --text-secondary: #94a3b8;
+    /* Slate 400 */
+
+    /* UI */
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 8px;
+    --shadow-soft: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--pk-navy);
+    color: var(--text-primary);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#root {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Utilities */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-surface {
+    background: rgba(30, 41, 59, 0.6);
+    /* Glassy charcoal */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: var(--glass-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+.icon-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: var(--pk-surface);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+    background: var(--text-secondary);
+    color: var(--pk-navy);
+    transform: translateY(-2px);
+}
+
+.icon-btn.active {
+    background: var(--pk-primary);
+    color: white;
+}
+
+.icon-btn.destructive {
+    background: rgba(239, 68, 68, 0.2);
+    color: var(--pk-red);
+}
+
+.icon-btn.destructive:hover {
+    background: var(--pk-red);
+    color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--pk-surface);
+    border-radius: 3px;
+}
