@@ -194,7 +194,7 @@ This project deploys **completely free** using:
 | **Render** | Backend hosting | [render.com](https://render.com) |
 | **MongoDB Atlas** | Cloud database | [mongodb.com/atlas](https://www.mongodb.com/cloud/atlas) |
 
-For full deployment steps, refer to [DEPLOYMENT.md](./Prism Hire/DEPLOYMENT.md)
+For full deployment steps, refer to [DEPLOYMENT.md](./Prism Hire/DEPLOYMENT.md).
 
 > ⚠️ **Note:** Render's free tier spins down after inactivity. The first request after idle may take 30–50 seconds to wake up.
 
