@@ -1,4 +1,4 @@
-
+<div align="center">
 
 # 🌟 Prism Hire — AI-Powered Student Hub & Interview Prep Platform
 
@@ -10,7 +10,7 @@
 [![React](https://img.shields.io/badge/Frontend-React_+_Vite-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![Node.js](https://img.shields.io/badge/Backend-Node.js_+_Express-339933?style=for-the-badge&logo=nodedotjs)](https://nodejs.org/)
 
-
+</div>
 
 ---
 
@@ -194,7 +194,7 @@ This project deploys **completely free** using:
 | **Render** | Backend hosting | [render.com](https://render.com) |
 | **MongoDB Atlas** | Cloud database | [mongodb.com/atlas](https://www.mongodb.com/cloud/atlas) |
 
-For full deployment steps, refer to [DEPLOYMENT.md](./Prism Hire/DEPLOYMENT.md).
+For full deployment steps, refer to [DEPLOYMENT.md](./DEPLOYMENT.md).
 
 > ⚠️ **Note:** Render's free tier spins down after inactivity. The first request after idle may take 30–50 seconds to wake up.
 
